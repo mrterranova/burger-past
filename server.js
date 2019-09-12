@@ -8,7 +8,7 @@ var exphbs = require('express-handlebars');
 var app = express();
 
 //initiate a directory called public to make all front-end files available
-app.use(expres.static(__dirname +'/public'));
+app.use(express.static(__dirname +'/public'));
 
 app.use(bodyParser.urlencoded ({
     extended: false
@@ -27,4 +27,6 @@ app.use('/', routes);
 
 var PORT = 3000 || process.env.PORT; 
 
-app.listen(PORT);
+app.listen(PORT, function(){
+    console.log("Listening on port: "+ PORT)
+});
