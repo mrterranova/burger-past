@@ -1,0 +1,84 @@
+@font-face {
+    font-family: hippie;
+    src: url(Hippie_Movement/Hippie\ Movement.ttf);
+}
+
+body { 
+    background-color: rgb(102, 35, 38);
+}
+
+h1 {
+    font-family: hippie;
+    text-align: center;
+    font-size: 100px;
+}
+
+.a {
+    color: green;
+}
+.b {
+    color: yellow;
+}
+.c{
+    color: orange;
+}
+.d{
+    color: pink;
+}
+.e{
+    color: purple;
+}
+.f{
+    color: blue;
+}
+
+#inputBurger {
+    width: 100vw;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#placeHolderBurger {
+    width: 20%;
+    margin: 20px 0 0 50px;
+}
+
+#name {
+    background-color: yellow; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, red, yellow); /* Standard syntax (must be last) */
+    border: 2px solid black;
+    height: 50px;
+    width: 60%;
+    padding: 10px;
+    font-family: hippie;
+    font-size: 30px;
+    color: black;
+
+}
+::placeholder {
+    color: black;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: black;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+   color: black;
+  }
+
+  #addBurger {
+      outline: none;
+      opacity: 1;
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      margin-left: 750px;
+      margin-top: -30px;
+      
+  }
+
+#undevouredBurgers {
+    margin-top: 20px;
+}
