@@ -9,6 +9,6 @@ CREATE TABLE burgers(
     PRIMARY KEY (id)
     );
     
-INSERT INTO burgers (burger_name, devoured) VALUES ('Cheese Burger', FALSE);
-INSERT INTO burgers (burger_name, devoured) VALUES ('Turkey Burger', FALSE);
-INSERT INTO burgers (burger_name, devoured) VALUES ('Veggie Burger', FALSE);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Rose Burger', FALSE);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Daisy Burger', FALSE);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Sunflower Burger', FALSE);
