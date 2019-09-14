@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var exphbs = require('express-handlebars');
 
+var PORT = 3000 || process.env.PORT; 
 //place express functions in a variable
 var app = express();
 
@@ -25,7 +26,6 @@ app.set('view engine', 'handlebars');
 var routes = require('./controllers/routes.js');
 app.use('/', routes);
 
-var PORT = 3000 || process.env.PORT; 
 
 app.listen(PORT, function(){
     console.log("Listening on port: "+ PORT)
