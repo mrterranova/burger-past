@@ -1,17 +1,12 @@
 <div class="container">
     <div class="row">
-            <img src="../public/images/hamburger.png" alt="">
         <div class="col-xs-12 text-center" id="top-bar">
             <h1>
                 <span class="a">E</span>
                 <span class="b">A</span>
-                <span class="c">T</span>&nbsp
-                <img id="flower" src="../public/images/flower.png" alt="">
-                &nbsp
+                <span class="c">T</span>&nbsp;&nbsp;
                 <span class="d">D</span>
-                <span class="e">A</span>&nbsp
-                <img id="flower" src="../public/images/flower.png" alt="">
-                &nbsp 
+                <span class="e">A</span>&nbsp;&nbsp;
                 <span class="f">B</span>
                 <span class="a">U</span>
                 <span class="b">R</span>
@@ -30,12 +25,13 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-6 text-center" class="task" id="undevouredBurgers">
+        <div class="col-md-6" class="task" id="undevouredBurgers">
+            <h2> Far Out Burgers Ready:</h2>
             <div class="row">
                 {{#each burger_data}}
                 {{#unless this.devoured}}
-                <div class="col-lg-9" id="burgersToEat">
-                    <pre>
+                <div class="col-lg-9">
+                    <pre id="burgersToEat">
                     {{this.id}}. {{this.burger_name}}
                 </pre>
                 </div>
@@ -43,7 +39,7 @@
                     <form method="POST" action="/burgers/update?_method=PUT" class="button-size">
                         <input id="burgerNames" type="hidden" name="burger_id" type="text" value={{this.id}}>
                         <br>
-                        <button id="devourButton" type="submit" class="btn btn-default">DEVOUR IT</button>
+                        <button id="devourButton" type="submit" class="btn btn-default">Finish It!</button>
                     </form>
                 </div>
                 {{/unless}}
@@ -51,6 +47,7 @@
             </div>
         </div>
         <div class="col-md-6" id="placeHolderBurger" class="task">
+            <h2>Bummer, Man! Taken Burgers:</h2>
             {{#each burger_data}}
             {{#if this.devoured}}
             <div class="row">

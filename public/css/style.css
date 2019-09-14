@@ -2,15 +2,29 @@
     font-family: hippie;
     src: url(Hippie_Movement/Hippie\ Movement.ttf);
 }
+@font-face {
+    font-family: flower;
+    src: url(flower/Flower\ Bold.ttf);
+}
+@font-face {
+    font-family: arista;
+    src: url(Arista/[z]\ Arista\ ExtraFilled\ Trial.ttf);
+}
 
 body { 
     background-color: rgb(102, 35, 38);
 }
 
 h1 {
-    font-family: hippie;
+    font-family: flower;
     text-align: center;
     font-size: 100px;
+}
+h2{
+    font-family: flower;
+    font-size: 40px;
+    padding: 10px;
+    text-align: center;
 }
 .a {
     color: rgb(105, 248, 105);
@@ -44,7 +58,7 @@ h1 {
 #name {
     background-color: yellow; /* For browsers that do not support gradients */
     background-image: linear-gradient(to bottom right, red, yellow); /* Standard syntax (must be last) */
-    border: 2px solid black;
+    border: 2px solid turquoise;
     height: 50px;
     width: 60%;
     padding: 10px;
@@ -59,16 +73,16 @@ h1 {
     position: absolute;
 }
 ::placeholder {
-    color: black;
+    color: rgb(117, 117, 117);
     opacity: 1; /* Firefox */
   }
   
   :-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color: black;
+   color: rgb(117, 117, 117);
   }
   
   ::-ms-input-placeholder { /* Microsoft Edge */
-   color: black;
+   color: rgb(117, 117, 117);
   }
 
   #addBurger {
@@ -81,6 +95,13 @@ h1 {
       margin-top: -30px;
       border-radius: 50%;
       border-color: aquamarine;
+      font-family: hippie;
+      background-color: coral;
+      font-size: 22px;
+  }
+
+  #addBurger:hover {
+      background-color: yellow;
   }
 
 #placeHolderBurger {
@@ -104,12 +125,13 @@ h1 {
 }
 #burgersToEat {
     padding-top:30px;
-    font-family: hippie;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
 }
 #undevouredBurgers {
     margin-top: 50px;
     background-color: antiquewhite;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: hippie;
     font-size: 15px;
     padding-top: 5px;
     border: 2px solid turquoise;
